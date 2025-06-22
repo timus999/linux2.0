@@ -1,0 +1,46 @@
+# ~/.config/alacritty/alacritty.yml
+window:
+  opacity: 0.8
+  startup_mode: Maximized
+  decorations: none  # removes title/menu bar
+  padding:
+    x: 6
+    y: 6
+
+font:
+  normal:
+    family: "Hack Nerd Font Mono"
+    style: Regular
+  bold:
+    family: "Hack Nerd Font Mono"
+    style: Bold
+  italic:
+    family: "Hack Nerd Font Mono"
+    style: Italic
+  size: 14  # adjust to your taste
+
+# Optional: better font rendering
+draw_bold_text_with_bright_colors: true
+
+shell:
+  program: /usr/bin/tmux
+  args:
+    - new-session
+    - -A
+    - -s
+    - main  # auto-attach to session named "main"
+
+colors:
+  primary:
+    background: '0x1e1e2e'
+    foreground: '0xcdd6f4'
+  normal:
+    black:   '0x45475a'
+    red:     '0xf38ba8'
+    green:   '0xa6e3a1'
+    yellow:  '0xf9e2af'
+    blue:    '0x89b4fa'
+    magenta: '0xf5c2e7'
+    cyan:    '0x94e2d5'
+    white:   '0xbac2de'
+
